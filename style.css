@@ -1,0 +1,240 @@
+:root {
+    --primary: #34333E;
+    --secondary: #9DCABF;
+    --btn-primary: #203A4A;
+    --font-secondary: #929195;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    min-width: 400px;
+    color: var(--primary);
+}
+
+.uptriangle {
+    position: absolute;
+    top: 5px;
+    /* display:inline-block!important; */
+    width: 0;
+    height: 0;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:30px solid black;}
+.downtriangle {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    /* display:inline-block!important; */
+    width: 0;
+    height: 0;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-top:30px solid black;}
+
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;}
+    /* min-width: 300px;} */
+.triangles{
+    flex: 1;}
+.menuItem{
+    margin: 10px;
+    text-decoration: none;
+    color: var(--primary);}
+
+p {
+    color: var()
+}
+.home{
+    /* position: relative; */
+    background-image: url(./assets/images/computer.jpg); /* no-repeat center center fixed; */
+    background-size: 100% 100%;
+    height:  100%;
+    width: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+.home-content {
+    min-height: fit-content;
+    max-width: 400px;
+    min-width: 300px;
+    background-color: white;
+    height: 30%;
+    width: 30%;
+    position: absolute;
+     top: 84.5%;
+    bottom: .5%; 
+    padding: 30px;
+}
+.home-content > p{
+    position: absolute;
+    top: 10%;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    min-width: 100px;
+    font-size: larger;
+}
+.button, button {
+    border: 2px solid var(--btn-primary);
+    text-align: center;
+    padding: 10px;
+    border-radius: .2em;
+    cursor: pointer;
+    background:transparent;}
+
+
+button:focus {
+  box-shadow: 2px 2px 2px 2px var(--font-secondary);
+}
+a:active {
+    color:  var(--secondary);
+}
+#about-btn{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: var(--btn-primary);
+     color: white; 
+}
+
+.about {
+    /* border: 2px dashed black; */
+    margin: 5%;
+    /* position: relative; */
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;}
+
+.about-img{
+
+    background-image: url(./assets/images/man.jpg);
+   background-size:cover;
+   background-repeat: no-repeat; 
+    height: 100%;
+    width: 50%;
+    flex: 1;}
+/* .aboutImg {
+    height: 900px;
+} */
+.about-text {
+    flex: 1;
+
+    border-top: 2px solid var(--font-secondary);
+    border-bottom: 2px solid var(--font-secondary) ;
+    margin-left:50px;
+    padding: 20px 0px;}
+.about-text > p {
+    padding: 20px 0px;
+    max-width: 50%;
+    min-width: 200px;
+    color: var(--font-secondary)}
+.about-text > .button {
+    max-width: 50%;
+    min-width: 200px;}
+
+#portfolio-btn{
+    width: 300px;
+}
+.contact {
+
+    display: flex;
+    margin: 5%;
+    align-content: center;
+    align-items: center;
+}
+.contact > h2 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.contact > hr {
+    flex: 2;
+    background: var(--primary);
+    height: 2px;
+    align-self: center;
+    margin: 5%;
+}
+
+#contact-btn{
+    /* flex: 1; */
+    width: 200px;
+    height: 20%;
+}
+
+.footer{
+ 
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary);
+    }
+.footer-triangleses{
+    /* flex: 1; */
+    color: white;
+}
+
+.footerMenuItems {
+   display: flex;
+ 
+    margin-left: 60px ;
+    
+}
+.footerItem {
+    color: white;
+    text-decoration: none;
+    /* width: 100%; */
+    margin: 1%;
+ 
+   }
+
+.circles{
+    display: flex;
+    flex:2;
+    justify-content: flex-end;
+    
+}
+.circle {
+   
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5em;
+    margin: 1%;
+}
+
+@media (max-width: 768px) {
+    .about {
+        display: inline;
+        margin: 20%;
+    }
+    .about-text {
+        text-align: center;
+        max-width: 100%;
+        margin: 10%;
+        padding: 5%;
+    }
+    .about-text > p {
+      max-width: 100%;
+    }
+    .about-text > .button {
+       margin-left: 25%;
+ 
+    }
+    .about-img {
+        margin: 5%;
+        height: 100%;
+        width: 90%;
+    }
+    .about-img > .about-img
+}
